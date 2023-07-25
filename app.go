@@ -23,6 +23,10 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+
+	for {
+		fmt.Printf("testing log sample-go-app, time : %v \n", time.Now())
+	}
 }
 
 func serveTemplate(w http.ResponseWriter, r *http.Request) {
